@@ -1,4 +1,4 @@
-# Style_guide for StatPREP Lessons
+# Style guide for StatPREP Lessons
 
 One of the techniques for making lessons accessible to students is to have a consistent *style* across documents. Students don't know at first which variations in the way a lesson is written are important and worth taking note of, and which reflect casual and unimportant decisions made by the lesson's author. Adopting a consistent style reduces the student's cognitive load.
 
@@ -29,7 +29,7 @@ Unless there is some pressing reason to do otherwise:
 
 1. The raw display of data tables in a narrative section should have the same style as data displayed as the result of running a command block.
 2. For data sets that are small (say, < 100KB), display the whole data frame in a paged display, rather than using `head()`.  
-3. Set the default knitr table printing method to XXXX so that the printing command does not need to be part of a command displayed to students. 
+3. Set the default knitr table printing method to DT (?????) so that the printing command does not need to be part of a command displayed to students. 
 
 ## 3. Commands available to the student
 
@@ -39,7 +39,8 @@ Even if a lesson is not using the command dialect specified in Section YYYY, the
 
 
 1. Use `read_csv()` and the like to store data as tibbles.
-2. Data wrangling should be done using the tidyverse, especially `dplyr` and `tidyr`.    
+2. Data wrangling should be done using the tidyverse, especially `dplyr` and `tidyr`.
+
     a. Prefer `filter()` and `select()` over `subset()`.
     b. Avoid indexing by brackets or `$`.
     c. Prefer using pipes for short wrangling statements. Each step in the pipe should go on its own line.

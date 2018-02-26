@@ -121,8 +121,8 @@ $(document).ready(function () {
 </div>
 
 
-<div id="style_guide-for-statprep-lessons" class="section level1">
-<h1>Style_guide for StatPREP Lessons</h1>
+<div id="style-guide-for-statprep-lessons" class="section level1">
+<h1>Style guide for StatPREP Lessons</h1>
 <p>One of the techniques for making lessons accessible to students is to have a consistent <em>style</em> across documents. Students don’t know at first which variations in the way a lesson is written are important and worth taking note of, and which reflect casual and unimportant decisions made by the lesson’s author. Adopting a consistent style reduces the student’s cognitive load.</p>
 <p>There are several aspects to style covered by this document:</p>
 <ol style="list-style-type: decimal">
@@ -148,7 +148,7 @@ $(document).ready(function () {
 <li>The raw display of data tables in a narrative section should have the same style as data displayed as the result of running a command block.</li>
 <li>For data sets that are small (say, &lt; 100KB), display the whole data frame in a paged display, rather than using <code>head()</code>.<br />
 </li>
-<li>Set the default knitr table printing method to XXXX so that the printing command does not need to be part of a command displayed to students.</li>
+<li>Set the default knitr table printing method to DT (?????) so that the printing command does not need to be part of a command displayed to students.</li>
 </ol>
 </div>
 <div id="commands-available-to-the-student" class="section level2">
@@ -159,13 +159,13 @@ $(document).ready(function () {
 <h2>4. Command dialects</h2>
 <ol style="list-style-type: decimal">
 <li>Use <code>read_csv()</code> and the like to store data as tibbles.</li>
-<li>Data wrangling should be done using the tidyverse, especially <code>dplyr</code> and <code>tidyr</code>.
+<li><p>Data wrangling should be done using the tidyverse, especially <code>dplyr</code> and <code>tidyr</code>.</p>
 <ol style="list-style-type: lower-alpha">
 <li>Prefer <code>filter()</code> and <code>select()</code> over <code>subset()</code>.</li>
 <li>Avoid indexing by brackets or <code>$</code>.</li>
 <li>Prefer using pipes for short wrangling statements. Each step in the pipe should go on its own line.</li>
 </ol></li>
-<li>Use formula-based statistics and graphics whenever possible (which, for intro stats, is “always”).</li>
+<li><p>Use formula-based statistics and graphics whenever possible (which, for intro stats, is “always”).</p></li>
 </ol>
 <p>If there’s a compelling reason to put these guidelines to the side, for instance, you’re writing a lesson about <code>ggplot()</code> or <code>data.table</code>, don’t obsess about using the preferred command dialects.</p>
 <ol start="4" style="list-style-type: decimal">
